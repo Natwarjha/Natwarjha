@@ -1,0 +1,94 @@
+﻿
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>SHOPPING MART</title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            width: 1200px;
+        }
+        .auto-style2 {
+            text-align: center;
+            color: #FFFFFF;
+        }
+        .auto-style3 {
+            color: #000000;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        
+        <table align="center" cellpadding="0" cellspacing="0" class="auto-style1">
+            <tr>
+                <td>
+                    <table class="auto-style1">
+                        <tr>
+                            <td>
+                                SHOPPING MART</td>
+                            <td>email id- apnabajar123@gmail.com<asp:Image ID="Image15" runat="server" ImageUrl="~/Image/notification.jpg" Width="50px" />
+                                <asp:Image ID="Image14" runat="server" ImageUrl="~/Image/shopping-cart.png" style="text-align: left" Width="50px" />
+                                <asp:LinkButton ID="LinkButton1" runat="server" OnClick="LinkButton1_Click"></asp:LinkButton>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td style="background-color: #FF0000; font-size: x-large; font-weight: lighter; border-spacing: 0px;">
+                    <asp:HyperLink ID="HOME" runat="server" NavigateUrl="~/Home.aspx" CssClass="auto-style3">HOME</asp:HyperLink>
+                    <span class="auto-style3">&nbsp;|&nbsp;
+                    </span>
+                    <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/Signup.aspx" CssClass="auto-style3">SIGNUP &amp; LOGIN</asp:HyperLink>
+                    <span class="auto-style3">&nbsp;|
+                    </span>
+                    <asp:HyperLink ID="ELECTRONICS" runat="server" NavigateUrl="~/Electronics.aspx" CssClass="auto-style3">ELECTRONICS</asp:HyperLink>
+                    <span class="auto-style3">&nbsp;|
+                    </span>
+                    <asp:HyperLink ID="MEN" runat="server" NavigateUrl="~/Mens.aspx" CssClass="auto-style3">MEN</asp:HyperLink>
+                    <span class="auto-style3">&nbsp;|
+                    </span>
+                    <asp:HyperLink ID="WOMEN" runat="server" NavigateUrl="~/Womens.aspx" CssClass="auto-style3">WOMEN</asp:HyperLink>
+                &nbsp;|
+                  <%--  <asp:Panel ID="Panel1" runat="server">--%>
+                         <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/Myorder.aspx" CssClass="auto-style3">My Order</asp:HyperLink>
+
+                   <%-- </asp:Panel>--%>
+                   
+                </td>
+            </tr>
+            <tr>
+                <td><marquee>
+                    <asp:Image ID="Image2" runat="server" ImageUrl="~/Image/rk.jpg" Width="300px" Height="250px" />
+                    <asp:Image ID="Image3" runat="server" ImageUrl="~/Image/rk1.jpg" Width="300px" Height="250px" />
+                    <asp:Image ID="Image4" runat="server" Height="250px" ImageUrl="~/Image/rk2.jpg" Width="300px" />
+                    <asp:Image ID="Image5" runat="server" Height="250px" ImageUrl="~/Image/rk3.jpg" Width="300px" /></marquee>
+
+                </td>
+            </tr>
+            <tr>
+                <td><hr /></td>
+            </tr>
+            <tr>
+                <td>
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    </asp:ContentPlaceHolder>
+                </td>
+            </tr>
+            <tr>
+                <td class="auto-style2" bgcolor="00,66,99" style="padding-bottom:20px; padding-top:20px"><em><strong>copyright2019-2020 onlineshopping.com</strong></em></td>
+            </tr>
+        </table>
+        
+    </div>
+    </form>
+    <p>
+        &nbsp;</p>
+</body>
+</html>

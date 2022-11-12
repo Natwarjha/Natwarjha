@@ -1,0 +1,88 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="AdminMaster.master.cs" Inherits="AdminMaster" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title>apnabazar.com</title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            width: 1200px;
+        }
+        .auto-style2 {
+            text-align: center;
+            color: #FFFFFF;
+        }
+        .auto-style3 {
+            color: #000000;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        
+        <table align="center" cellpadding="0" cellspacing="0" class="auto-style1">
+            <tr>
+                <td>
+                    <table class="auto-style1">
+                        <tr>
+                            <td>
+                                <strong><em>shopping mart</em></strong><br />
+                            </td>
+                            <td>&nbsp;</td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td style="background-color: #FF0000; font-size: x-large; font-weight: lighter; border-spacing: 0px; text-align:right" >
+                    <asp:Panel ID="Panel1" runat="server" Width="949px" HorizontalAlign="Left">
+                                            <span class="auto-style3">&nbsp;</span><asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/CategoryMaster.aspx" SkinID=" ">Add Item Category</asp:HyperLink>
+&nbsp;
+                    <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/ItemsDetails.aspx">Add Item Details</asp:HyperLink>
+&nbsp;
+                    <asp:Label ID="LblWelcomeMsg" runat="server"></asp:Label>
+&nbsp;<asp:LinkButton ID="LinkButton1" runat="server" OnClick="LinkButton1_Click">Logout</asp:LinkButton>
+
+                                            &nbsp;
+                                            <%--<asp:HyperLink ID="HyperLink3" runat="server" NavigateUrl="~/AdminLogin.aspx">Login</asp:HyperLink>--%>
+
+                                            <asp:HyperLink ID="HyperLink4" runat="server" NavigateUrl="~/Tracking.aspx">Tracking </asp:HyperLink>
+
+                    </asp:Panel>
+                    <asp:HyperLink ID="HyperLink3" runat="server" NavigateUrl="~/AdminLogin.aspx">Login</asp:HyperLink>
+                    <asp:Label ID="Label1" runat="server"></asp:Label>
+                </td>
+            </tr>
+            <tr>
+                <td><marquee>
+                    <asp:Image ID="Image2" runat="server" ImageUrl="~/Image/rk.jpg" Width="300px" Height="250px" />
+                    <asp:Image ID="Image3" runat="server" ImageUrl="~/Image/rk1.jpg" Width="300px" Height="250px" />
+                    <asp:Image ID="Image4" runat="server" Height="250px" ImageUrl="~/Image/rk2.jpg" Width="300px" />
+                    <asp:Image ID="Image5" runat="server" Height="250px" ImageUrl="~/Image/rk3.jpg" Width="300px" /></marquee>
+
+                </td>
+            </tr>
+            <tr>
+                <td><hr /></td>
+            </tr>
+            <tr>
+                <td>
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    </asp:ContentPlaceHolder>
+                </td>
+            </tr>
+            <tr>
+                <td class="auto-style2" bgcolor="00,66,99" style="padding-bottom:20px; padding-top:20px"><em><strong>copyright2019-2020 apnabazar.com</strong></em></td>
+            </tr>
+        </table>
+        
+    </div>
+    </form>
+    <p>
+        &nbsp;</p>
+</body>
+</html>
